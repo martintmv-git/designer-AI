@@ -733,11 +733,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
       transform: none;
       margin-right: 0;
       margin-top: 10px;
-      border: 1px solid #fff;
-      border-width: 100%;
       padding: 18px 110px;
       width:100%;
       text-align: center;
+      color: black;
+      background-color: #fff;
   }
 }
 
