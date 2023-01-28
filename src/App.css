@@ -84,7 +84,7 @@ p.danger {
 }
 /************ Navbar Css ************/
 nav.navbar {
-  padding: 18px 0;
+  padding: 40px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -92,9 +92,8 @@ nav.navbar {
   transition:  0.32s ease-in-out;
 }
 nav.navbar.scrolled {
-  padding: 0px 0;
   background-color: #121212;
-}
+} 
 nav.navbar a.navbar-brand {
     width: 15%;
 }
@@ -191,14 +190,16 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 .navbar-text button {
   font-weight: 700;
   color: #fff;
-  border: 1px solid #fff;
   border-radius: 8px;
   padding: 18px 34px;
   font-size: 18px;
-  margin-left: 18px;
-	position: relative;
-	background-color: transparent;
-	transition: 0.3s ease-in-out;
+  margin-right: 30px;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  right: 0; /* Position the button to the right side of the navbar */
+  top: 50%; /* Center the button vertically within the navbar */
+  transform: translateY(-50%); /* Offset the button's vertical position by half its height */
 }
 .navbar-text button span {
   z-index: 1;
@@ -502,6 +503,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+/************************/
+.card {
+  width: 130px;
+  height: 195px;
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  opacity: 1;
+}
+.card .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.card:hover .img-top {
+  display: inline;
+}
+/************************/
 /************ Projects Css ************/
 .contact {
   color: #fff;
@@ -699,3 +721,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin-bottom: 15%;
   }
 }
+@media (max-width: 768px) {
+  .navbar-text {
+      display: flex;
+      justify-content: center;
+  }
+  .navbar-text button {
+      position: relative;
+      right: auto;
+      top: auto;
+      transform: none;
+      margin-right: 0;
+      margin-top: 10px;
+      border: 1px solid #fff;
+      border-width: 100%;
+      padding: 18px 110px;
+      width:100%;
+      text-align: center;
+  }
+}
+
