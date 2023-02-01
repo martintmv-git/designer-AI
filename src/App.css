@@ -468,6 +468,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100%;
   visibility: visible;
 }
+.proj-imgbx:hover .proj-txtx {
+  top: 50%;
+  opacity: 1;
+}
 .proj-txtx {
   position: absolute;
   text-align: center;
@@ -477,10 +481,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
-}
-.proj-imgbx:hover .proj-txtx {
-  top: 50%;
-  opacity: 1;
 }
 .proj-txtx h4 {
   font-size: 30px;

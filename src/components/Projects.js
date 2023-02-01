@@ -3,40 +3,24 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";  
-import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-
+//new images
 export const Projects = () => {
 
   const projects = [
     {
-      title: "Room Interior",
-      description: "Apartament",
+      title: "Living Room",
+      description: "...classic old-fashioned interior, blue painting above blue corner couch, new floor and carpet.",
       imgUrl: projImg1,
     },
     {
-      title: "Room Interior",
-      description: "Apartament",
+      title: "Bedroom",
+      description: "...modern interior, cozy colours, big floor carpet, big low bed, buffet lamp, paintings on the wall.",
       imgUrl: projImg2,
     },
     {
-      title: "Room Interior",
-      description: "Apartament",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Room Interior",
-      description: "Apartament",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Room Interior",
-      description: "Apartament",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Room Interior",
-      description: "Apartament",
+      title: "Living Room ",
+      description: "...minimalist-modern style, green accents, calm colours, modern couch, coffee table, mirror and painting, polished wooden floor. ",
       imgUrl: projImg3,
     },
   ];
@@ -50,7 +34,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Showcase</h2>
-                <p>Example results from selected projects designed by our AI tool. </p> <p>The following images have all been imported through the platform using a text prompt. Through this prompt, users have provided descriptions for the AI to use in adding elements such as interior style, furniture, and colors to the images.</p>
+                <p>The following spaces have been designed using AI. Using text prompt and an image for the AI to work on, it generates a varitation of results that try to fit in our user's vision.</p> <p> More examples at /library.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Tab.Content id="slideInUp" className={isVisible ? "" : ""}>
                     <Tab.Pane eventKey="first">
