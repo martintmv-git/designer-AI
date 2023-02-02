@@ -4,27 +4,24 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";  
 import TrackVisibility from 'react-on-screen';
-//new images
 export const Projects = () => {
 
-  const projects = [
+  const projects1 = [
     {
-      title: "Living Room",
-      description: "...classic old-fashioned interior, blue painting above blue corner couch, new floor and carpet.",
+      title: "Guest Room",
+      description: "...classic old-fashioned interior, wall patterns, calm colours, blue painting above corner couch, new floor and carpet...",
       imgUrl: projImg1,
     },
     {
       title: "Bedroom",
-      description: "...modern interior, cozy colours, big floor carpet, big low bed, buffet lamp, paintings on the wall.",
+      description: "...modern interior, cozy colours, big floor carpet, ground bed, buffet lamp, paintings on the wall, keep the original curtains...",
       imgUrl: projImg2,
     },
     {
       title: "Living Room ",
-      description: "...minimalist-modern style, green accents, calm colours, modern couch, coffee table, mirror and painting, polished wooden floor. ",
+      description: "...minimalist-modern style, green accents, modern furniture, mirror and a painting, polished wooden floor...",
       imgUrl: projImg3,
-    },
-  ];
-
+    },];
   return (
     <section className="project" id="project">
       <Container>
@@ -40,11 +37,12 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          projects1.map((project, index) => {
                             return (
                               <ProjectCard
-                                key={index}
-                                {...project}
+                              key={index}
+                              className={`box${index + 1}`}
+                              {...project}
                                 />
                             )
                           })
