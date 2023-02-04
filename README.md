@@ -1,9 +1,7 @@
 # Interior Designer AI Tool - designer.ai
+# CONCEPT
+Designer AI is an innovative platform that simplifies the interior design process. To get started, simply upload a photo of your space and provide a brief description of what you're looking for. Our AI system will then calculate the dimensions and parameters of the space and present you with a curated photo gallery of furniture options that fit your style and requirements. </br> </br> The platform allows users to provide text prompts to describe their desired design vision, making it easy to visualize and achieve the perfect interior space. With Designer AI, you can bring your design dreams to life with ease.
 #### - - - Project In Development - - -
-##### Concept </br>
-This system allows customers to take a picture of their interior space and upload it to the platform through a user-friendly interface. Using artificial intelligence, it calculates the dimensions and other necessary parameters of the space, providing photo gallery of furniture options for the customer to choose from. </br> </br>
-The customer can then view a variation of final images to choose from, with the selected furniture placed in their interior space. Our target audience are people who want to build or re-arrange their living spaces, apartments, houses or offices.
-
 <img width="1000" alt="Screenshot 2023-02-04 at 19 27 52" src="https://user-images.githubusercontent.com/101264514/216783698-ae8f0924-79a3-486c-9de3-54fe98fd87a0.png">
 <img width="1000" alt="Screenshot 2023-02-04 at 19 28 41" src="https://user-images.githubusercontent.com/101264514/216783700-276ef627-d31f-4442-850d-0c3f07a3943e.png">
 <img width="1000" alt="Screenshot 2023-02-04 at 19 29 00" src="https://user-images.githubusercontent.com/101264514/216783702-7d189f57-0360-48b9-a450-28a6adc4024d.png">
